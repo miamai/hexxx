@@ -1,0 +1,114 @@
+/* Pages Nav Bar*** */
+.section-bar-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 24px 12px 8px 12px;
+
+  @include pad {
+    padding: 8px 36px;
+  }
+
+  p {
+    padding-bottom: 8px;
+  }
+
+  span.red-bar {
+    color: $color-light-red;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  span.tags {
+    color: $color-light-red;
+    font-weight: 700;
+  }
+}
+
+/* Projects****** */
+.section-projects {
+  div.container {
+    padding: 0 12px 80px 12px;
+
+    @include pad {
+      padding: 0 36px 80px 36px;
+    }
+  }
+
+  p.project-name {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    margin-bottom: 16px;
+
+    @include pad {
+      margin-bottom: 24px;
+    }
+  }
+
+  div.project-container {
+    margin-bottom: 40px;
+    img {
+      width: 856px;
+
+      @include pad {
+        max-width: 516px;
+      }
+    }
+    p {
+      color: $color-dark-grey;
+    }
+  }
+
+  div.share-bar {
+    color: #000000;
+    font-weight: 700;
+    margin-bottom: 16px;
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  div.project-link {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+
+    a {
+      color: $color-dark;
+      text-decoration: none;
+      display: inline-block;
+    }
+  }
+
+  div.tags-container {
+    color: $color-light-red;
+
+    ion-icon {
+      font-size: 28px;
+      line-height: 48px;
+      @include sm-font-media;
+    }
+    span {
+      font-weight: 700;
+      @include sm-font-media;
+    }
+    span.tags-title {
+      font-size: 32px;
+      line-height: 48px;
+      @include sm-font-media;
+    }
+    ul {
+      list-style: none;
+      span:first-child {
+        padding-right: 24px;
+      }
+    }
+  }
+}

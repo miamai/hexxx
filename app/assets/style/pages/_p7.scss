@@ -1,0 +1,115 @@
+/* News Nav***** */
+.news-nav {
+  background-color: $color-dark-red;
+  color: $color-white;
+
+  div {
+    @include header-nav-flex;
+    padding: 12px;
+  }
+
+  ul {
+    display: flex;
+    gap: 48px;
+    list-style: none;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+  ion-icon {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+/* Blog********* */
+.section-blog {
+  img {
+    width: 636px;
+    height: auto;
+
+    @include pad {
+      width: auto;
+      height: 208px;
+    }
+  }
+
+  div.blog-box {
+    display: flex;
+    gap: 24px;
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 44px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $color-dark-red;
+      font-size: 36px;
+      line-height: 54px;
+      font-weight: 700;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      @include pad {
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-dark-grey;
+      }
+
+      &:hover,
+      &:active {
+        background-color: $color-light-red;
+      }
+    }
+  }
+
+  div.blog-subtitle-box {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      &:first-child {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 500;
+
+        @include pad {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+      &:last-child {
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-dark-grey;
+      }
+    }
+  }
+
+  p.blog-title {
+    font-size: 32px;
+    line-height: 48px;
+    color: $color-dark-red;
+
+    @include pad {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+
+  p.blog-text {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 16px;
+    color: $color-dark-grey;
+
+    @include pad {
+      font-size: 16px;
+      line-height: 24px;
+      padding-top: 4px;
+    }
+  }
+}

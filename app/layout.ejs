@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="js/script.js"></script>
+
+    <title><%- title %>W3-眼鏡官網</title>
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
+
+  <body>
+    <header class="nav-open">
+      <div>
+        <img alt="Logo" src="./pics/logo-white.png" />
+        <nav class="main-nav">
+          <ul>
+            <li>
+              <a href="./w3-2.html"></a>
+              系列鏡框
+            </li>
+            <li><a href="./w3-4.html"></a> 門市據點</li>
+            <li><a href="./w3-7.html"></a> 部落格</li>
+            <li><a href="./w3-6.html"></a> 常見問題</li>
+          </ul>
+        </nav>
+
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </div>
+    </header>
+
+    <%- contents %>
+
+    <footer>
+      <div class="container">
+        <div class="footer-flexbox">
+          <ul>
+            <li>首頁</li>
+            <li>系列鏡框</li>
+            <li>門市據點</li>
+            <li>部落格</li>
+            <li>常見問題</li>
+          </ul>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank"
+                ><img alt="FB" src="pics/ic-social-fb.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img alt="Instagram" src="pics/ic_social_ig.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com/" target="_blank"
+                ><img alt="Line" src="pics/ic_social_line.png"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <ul>
+            <li>
+              <ion-icon name="call-outline"></ion-icon>
+              <a href="tel:+0800-000-000" class="footer-info">0800-000-000</a>
+            </li>
+            <li>
+              <ion-icon name="mail-outline"></ion-icon>
+              <a href="mailto:glasses@business.com" class="footer-info"
+                >glasses@business.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <div class="footer-flexbox">
+          <p>Copyreight &copy; 2022 Glasses.All rights reserved.</p>
+          <ul>
+            <li>隱私政策</li>
+            <li>服務條款</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

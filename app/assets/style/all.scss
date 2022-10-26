@@ -1,0 +1,178 @@
+/* FONT WEIGHT
+思源體 Bold 700, Medium 500, Regular 400
+Roboto Black Italic 900, Medium 500, Regular 400*/
+
+@import "sets/extend";
+@import "sets/mixins";
+@import "sets/variables";
+
+@import "pages/layouts";
+@import "pages/p1";
+@import "pages/p2_3";
+@import "pages/p4_5";
+@import "pages/p6";
+@import "pages/p7";
+@import "pages/p8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Noto Sans TC", "Roboto";
+  line-height: 1;
+  font-weight: 400;
+}
+
+/* Layout****** */
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 80px 12px;
+
+  @include pad {
+    padding: 80px 36px;
+  }
+
+  @include mobile {
+    padding: 40px 16px;
+  }
+}
+
+.home-flexbox {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.home-flex {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.grid {
+  display: grid;
+  column-gap: 24px;
+  row-gap: 80px;
+
+  @include pad {
+    row-gap: 40px;
+  }
+}
+.grid-4-cols {
+  grid-template-columns: repeat(4, 1fr);
+
+  @include pad {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+
+  @include pad {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.grid-2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Font******** */
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 96px;
+
+  @include mobile {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  color: $color-dark-red;
+
+  @include mobile {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.h2-line {
+  color: $color-dark;
+  padding-left: 16px;
+  border-left: 8px solid #9f1213;
+  margin-bottom: 32px;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 48px;
+
+  @include mobile {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+p,
+form {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+span {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+/* Button***** */
+.button,
+.button:link,
+.button:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  background-color: $color-light-red;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: inherit;
+  border: none;
+  padding: 6px 12px;
+  transition: all 0.3s;
+}
+
+.button:hover,
+.button:active {
+  background-color: $color-dark-red;
+}
