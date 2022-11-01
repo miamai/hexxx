@@ -4,9 +4,9 @@
   background-size: cover;
   background-position: center center;
   height: calc(100vh - 80px);
-  background-image: url(/assets/pics/home-header.png);
+  background-image: url(../pics/home-header.png);
   @include sm-pad {
-    background-image: url(/assets/pics/home-header-sm.png);
+    background-image: url(../pics/home-header-sm.png);
     height: 396px;
   }
 
@@ -100,12 +100,12 @@
 
 /* Co Deisng*** */
 .section-cd {
-  background-image: url(/assets/pics/index-bg.png);
+  background-image: url(../pics/index-bg.png);
   @include pad {
-    background-image: url(/assets/pics/index-bg-md.png);
+    background-image: url(../pics/index-bg-md.png);
   }
   @include mobile {
-    background-image: url(/assets/pics/index-bg-sm.png);
+    background-image: url(../pics/index-bg-sm.png);
   }
 
   h2 {
