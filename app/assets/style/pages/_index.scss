@@ -101,6 +101,8 @@
 /* Co Deisng*** */
 .section-cd {
   background-image: url(../pics/index-bg.png);
+  background-position: center;
+  background-size: cover;
   @include pad {
     background-image: url(../pics/index-bg-md.png);
   }
