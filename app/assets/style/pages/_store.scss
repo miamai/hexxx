@@ -1,0 +1,47 @@
+/* Store******* */
+.section-store {
+  div.seclect-box {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 32px;
+
+    label {
+      font-size: 24px;
+      line-height: 36px;
+      @include mobile {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    #select-place {
+      width: 200px;
+      padding: 6px 12px;
+    }
+  }
+
+  div.grid {
+    row-gap: 48px;
+
+    @include pad {
+      row-gap: 24px;
+    }
+  }
+
+  div.card-box {
+    @include card-box-format;
+
+    max-width: calc((1296px - 48px) / 3);
+    @include pad {
+      max-width: 100%;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+    a {
+      @include store-button;
+    }
+  }
+}

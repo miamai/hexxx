@@ -1,18 +1,16 @@
-/* FONT WEIGHT
-思源體 Bold 700, Medium 500, Regular 400
-Roboto Black Italic 900, Medium 500, Regular 400*/
-
+@import "sets/variables";
 @import "sets/extend";
 @import "sets/mixins";
-@import "sets/variables";
+@import "sets/fontsize";
 
 @import "pages/layouts";
-@import "pages/p1";
-@import "pages/p2_3";
-@import "pages/p4_5";
-@import "pages/p6";
-@import "pages/p7";
-@import "pages/p8";
+@import "pages/index";
+@import "pages/products";
+@import "pages/store";
+@import "pages/branch_location";
+@import "pages/question";
+@import "pages/blog";
+@import "pages/projects";
 
 * {
   margin: 0;
@@ -55,14 +53,8 @@ body {
 
 .home-flex {
   display: flex;
-  flex-grow: 1;
   flex-wrap: wrap;
   gap: 24px;
-
-  @include mobile {
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
 .grid {
@@ -74,11 +66,15 @@ body {
     row-gap: 40px;
   }
 }
+
 .grid-4-cols {
   grid-template-columns: repeat(4, 1fr);
 
   @include pad {
     grid-template-columns: 1fr 1fr;
+  }
+  @include sm-pad {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -88,91 +84,11 @@ body {
   @include pad {
     grid-template-columns: 1fr 1fr;
   }
+  @include sm-pad {
+    grid-template-columns: 1fr;
+  }
 }
 
 .grid-2-cols {
   grid-template-columns: 1fr 1fr;
-}
-
-/* Font******** */
-h1 {
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 96px;
-
-  @include mobile {
-    font-size: 24px;
-    line-height: 36px;
-  }
-}
-
-h2 {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 72px;
-  color: $color-dark-red;
-
-  @include mobile {
-    font-size: 24px;
-    line-height: 36px;
-  }
-}
-
-.h2-line {
-  color: $color-dark;
-  padding-left: 16px;
-  border-left: 8px solid #9f1213;
-  margin-bottom: 32px;
-}
-
-h3 {
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 48px;
-
-  @include mobile {
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-
-h4 {
-  font-size: 24px;
-  line-height: 36px;
-}
-
-p,
-form {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-span {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 36px;
-}
-
-/* Button***** */
-.button,
-.button:link,
-.button:visited {
-  display: inline-block;
-  text-decoration: none;
-  text-align: center;
-  color: #fff;
-  background-color: $color-light-red;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  font-family: inherit;
-  border: none;
-  padding: 6px 12px;
-  transition: all 0.3s;
-}
-
-.button:hover,
-.button:active {
-  background-color: $color-dark-red;
 }
