@@ -341,10 +341,10 @@ footer {
   background-size: cover;
   background-position: center center;
   height: calc(100vh - 80px);
-  background-image: url(/assets/pics/home-header.png); }
+  background-image: url(../pics/home-header.png); }
   @media (max-width: 700px) {
     .section-home {
-      background-image: url(/assets/pics/home-header-sm.png);
+      background-image: url(../pics/home-header-sm.png);
       height: 396px; } }
   .section-home div.home-textbox {
     color: #650300;
@@ -424,13 +424,13 @@ footer {
 
 /* Co Deisng*** */
 .section-cd {
-  background-image: url(/assets/pics/index-bg.png); }
+  background-image: url(../pics/index-bg.png); }
   @media (max-width: 1024px) {
     .section-cd {
-      background-image: url(/assets/pics/index-bg-md.png); } }
+      background-image: url(../pics/index-bg-md.png); } }
   @media (max-width: 500px) {
     .section-cd {
-      background-image: url(/assets/pics/index-bg-sm.png); } }
+      background-image: url(../pics/index-bg-sm.png); } }
   .section-cd h2 {
     color: #fff; }
   .section-cd .cd-flex {
