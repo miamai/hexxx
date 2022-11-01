@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./assets/js/all.js"></script>
+
+    <title>分店門市 | 眼鏡官網</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23aa0601%22></rect><path d=%22M40.33 51.21L40.33 70.76Q37.62 74.65 32.77 76.57Q27.92 78.49 21.47 78.49L21.47 78.49Q14.95 78.49 9.90 75.43Q4.85 72.38 2.08 66.74Q-0.68 61.10-0.76 53.66L-0.76 53.66L-0.76 49.01Q-0.76 36.96 4.86 30.33Q10.49 23.71 20.67 23.71L20.67 23.71Q29.02 23.71 34.11 27.97Q39.20 32.24 40.33 40.08L40.33 40.08L33.30 40.08Q31.32 29.49 20.70 29.49L20.70 29.49Q13.64 29.49 9.99 34.45Q6.35 39.42 6.31 48.83L6.31 48.83L6.31 53.19Q6.31 62.16 10.41 67.45Q14.51 72.74 21.51 72.74L21.51 72.74Q25.46 72.74 28.43 71.86Q31.40 70.98 33.34 68.90L33.34 68.90L33.34 56.92L21.00 56.92L21.00 51.21L40.33 51.21ZM58.35 21.51L58.35 77.76L51.57 77.76L51.57 21.51L58.35 21.51ZM100.76 77.76L93.65 77.76Q93.07 76.59 92.70 73.58L92.70 73.58Q87.98 78.49 81.42 78.49L81.42 78.49Q75.56 78.49 71.81 75.18Q68.05 71.86 68.05 66.77L68.05 66.77Q68.05 60.58 72.76 57.16Q77.47 53.74 86.00 53.74L86.00 53.74L92.59 53.74L92.59 50.62Q92.59 47.07 90.47 44.96Q88.34 42.86 84.20 42.86L84.20 42.86Q80.58 42.86 78.13 44.69Q75.67 46.52 75.67 49.12L75.67 49.12L68.86 49.12Q68.86 46.15 70.97 43.39Q73.07 40.63 76.68 39.01Q80.29 37.40 84.61 37.40L84.61 37.40Q91.46 37.40 95.34 40.83Q99.22 44.25 99.37 50.26L99.37 50.26L99.37 68.49Q99.37 73.95 100.76 77.17L100.76 77.17L100.76 77.76ZM82.41 72.60L82.41 72.60Q85.60 72.60 88.45 70.95Q91.31 69.30 92.59 66.66L92.59 66.66L92.59 58.53L87.28 58.53Q74.83 58.53 74.83 65.82L74.83 65.82Q74.83 69.01 76.95 70.80Q79.08 72.60 82.41 72.60Z%22 fill=%22%23fff%22></path></svg>"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
+
+  <body>
+    <a href="#" class="scroll-top">TOP</a>
+    <header class="nav-header">
+      <div>
+        <a href="index.html">
+          <img alt="Logo" src="assets/pics/logo-white.png" />
+        </a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="optical-product.html">系列鏡框</a></li>
+            <li><a href="store.html">門市據點</a></li>
+            <li><a href="blog.html">部落格</a></li>
+            <li><a href="question.html">常見問題</a></li>
+          </ul>
+        </nav>
+
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </div>
+    </header>
+
+    
+<main>
+  <!-- BRANCH STORE -->
+  <section class="section-store container">
+    <h2 class="h2-line">門市據點</h2>
+    <div class="seclect-box">
+      <label for="select-place">選擇分店</label>
+      <select id="select-place" placehoder="台北中山旗艦店">
+        <option volue="taipei">台北中山旗艦店</option>
+        <option volue="taipei">台北綠園店</option>
+        <option volue="taichung">台中清水旗艦店</option>
+        <option volue="kaohsiung">高雄中正形象店</option>
+        <option volue="kaohsiung">高雄夢時代店</option>
+      </select>
+    </div>
+
+    <div class="branch-container grid-branch-cols">
+      <div class="branch-cardbox">
+        <img class="branch-img" alt="store" src="assets/pics/store-1.png" />
+        <div class="branch-cardtext">
+          <p>台北中山旗艦店</p>
+          <hr />
+          <ul>
+            <li>
+              <ion-icon name="call"></ion-icon><span>電話：(02)000-1234</span>
+            </li>
+            <li>
+              <ion-icon name="time-outline"></ion-icon
+              ><span>營業時間：10:00-21:00</span>
+            </li>
+            <li>
+              <ion-icon name="location-outline"></ion-icon
+              ><span>地址：台北市中山區南京東路25巷2-1號</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="location-imgbox">
+        <img
+          class="location-img"
+          src="assets/pics/中山旗艦店.png"
+          alt="zhongshan store"
+        />
+        <img
+          class="location-img-mobile"
+          src="assets/pics/中山旗艦店.png"
+          alt="zhongshan store"
+        />
+      </div>
+    </div>
+  </section>
+</main>
+
+
+    <footer>
+      <div class="container">
+        <div class="footer-linkbox">
+          <div class="footer-flexbox">
+            <ul class="footer-links">
+              <li><a href="index.html">首頁</a></li>
+              <li><a href="optical-product.html">系列鏡框</a></li>
+              <li><a href="store.html">門市據點</a></li>
+              <li><a href="blog.html">部落格</a></li>
+              <li><a href="question.html">常見問題</a></li>
+            </ul>
+            <ul class="footer-icons">
+              <li>
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><img alt="FB" src="assets/pics/ic-social-fb.png"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><img alt="Instagram" src="assets/pics/ic_social_ig.png"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com/" target="_blank"
+                  ><img alt="Line" src="assets/pics/ic_social_line.png"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <ul>
+              <li>
+                <ion-icon name="call-outline"></ion-icon>
+                <a href="tel:+0800-000-000" class="footer-info">0800-000-000</a>
+              </li>
+              <li>
+                <ion-icon name="mail-outline"></ion-icon>
+                <a href="mailto:glasses@business.com" class="footer-info"
+                  >glasses@business.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-flexbox">
+          <p>Copyreight &copy; 2022 Glasses.All rights reserved.</p>
+          <ul class="footer-policy">
+            <li>隱私政策</li>
+            <li>服務條款</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
