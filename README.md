@@ -1,5 +1,5 @@
-## Glassess Store 
-> [website link](https://miamai.github.io/hexschool_w3_glassess_website/)
+# The Glassess Store Website
+> buit in gulp! [website link](https://miamai.github.io/hexschool_w3_glassess_website/)
 
 # 網頁切版直播班 Gulp 範例
 
