@@ -4,7 +4,7 @@
 # 網頁切版直播班 Gulp 範例
 
 > 使用該專案 Gulp 時，就可以不用使用其他編譯工具編譯 SCSS 或是 JavaScript 囉。
-
+   
 ## 指令列表
 
 - `gulp` - 執行開發模式(會開啟模擬瀏覽器並監聽相關檔案)
@@ -60,7 +60,7 @@ Gulp 的自動更新行為是必須持續開著終端機的，因此若關閉終
 
 ## 部署 gh-pagse 流程說明
 
-部署前請務必先將該 Gulp 原始碼上傳到 GitHub Repositories 也就是初始化 GitHub，因此通常第一步驟會輸入以下指令
+部署前請務必先將該 Gulp 原始碼上傳到 GitHub Repositories 也就是初始化 GitHub，因此通常第一步驟會輸入以下指令^_^
 
 ```cmd
 git init # 若已經初始化過就可以不用輸入
